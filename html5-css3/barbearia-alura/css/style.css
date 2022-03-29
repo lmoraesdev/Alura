@@ -158,8 +158,6 @@ th {
 	clear: left;
 }
 
-
-
 .principal {
 	padding: 3em 0;
 	background: #fefefe;
@@ -220,7 +218,7 @@ th {
 	box-shadow: 10px 10px 10px 0 #000000;
 }
 
-.imagembeneficios:hover{
+.imagembeneficios:hover {
 	opacity: 0.3;
 }
 
@@ -244,17 +242,22 @@ th {
 	margin: 2em auto;
 }
 
-@media screen and (max-width:480px){
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+@media screen and (max-width: 480px) {
+	.caixa,
+	.principal,
+	.conteudo-beneficios,
+	.mapa-conteudo,
+	.video {
 		width: auto;
 	}
-	h1{
+	h1 {
 		text-align: center;
 	}
-	nav{
+	nav {
 		position: static;
 	}
-	.lista-beneficios, .imagembeneficios{
+	.lista-beneficios,
+	.imagembeneficios {
 		width: auto;
 	}
 }
