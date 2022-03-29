@@ -1,3 +1,7 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
 header {
 	background: #bbbbbb;
 	padding: 20px 0;
@@ -86,11 +90,6 @@ footer {
 	margin: 20px;
 }
 
-main {
-	width: 940px;
-	margin: 0 auto;
-}
-
 form {
 	margin: 40px 0;
 }
@@ -102,22 +101,22 @@ form legend {
 	margin: 0 0 10px;
 }
 
-.input-padrao{
+.input-padrao {
 	display: block;
 	margin: 0 0 20px;
 	padding: 10px 25px;
 	width: 50%;
 }
 
-.checkbox{
-	margin:20px 0;
+.checkbox {
+	margin: 20px 0;
 }
 
-.enviar{
+.enviar {
 	width: 40%;
 	padding: 15px 0;
 	background: orange;
-	color:white;
+	color: white;
 	font-weight: bold;
 	font-size: 18px;
 	border: none;
@@ -126,22 +125,114 @@ form legend {
 	cursor: pointer;
 }
 
-.enviar:hover{
+.enviar:hover {
 	background: darkorange;
 	transform: scale(1.2);
 }
 
-table{
+table {
 	margin: 20px 0 40px;
 }
 
-thead{
+thead {
 	background: #555555;
 	color: white;
 	font-weight: bold;
 }
 
-td, th{
+td,
+th {
 	border: 1px solid #000000;
 	padding: 8px 15px;
+}
+
+/* css da pagina inical */
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+
+
+.principal {
+	padding: 3em 0;
+	background: #fefefe;
+	width: 640px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.itens {
+	line-height: 1.5em;
+}
+
+.itens:before {
+	content: " ★ ";
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.imagembeneficios {
+	width: 60%;
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+	text-align: center;
+	margin: 0 0 2em;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
 }
