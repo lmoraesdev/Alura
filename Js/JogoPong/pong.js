@@ -30,6 +30,8 @@ let ponto;
 let raquetada;
 let trilha;
 
+let chanceDeErrar = 0;
+
 function preload() {
 	trilha = loadSound("audio/trilha.mp3");
 	raquetada = loadSound("audio/raquetada.mp3");
@@ -45,7 +47,7 @@ function draw() {
 	background(0);
 	mostraBolinha();
 	movimentaBolinha();
-	verificaColisaoBorda();
+	verificaColisaoBorda(xBolinha, yBolinha);
 	mostraRaquete(xRaquete, yRaquete);
 	movimentaMinhaRaquete();
 	//verificaColisaoRaquete();
@@ -66,11 +68,11 @@ function movimentaBolinha() {
 	yBolinha += velocidadeYBolinha;
 }
 
-function verificaColisaoBorda() {
-	if (xBolinha + raio > width || xBolinha - raio < 0) {
+function verificaColisaoBorda(x, y) {
+	if (x + raio > width || x - raio < 0) {
 		velocidadeXBolinha *= -1;
 	}
-	if (yBolinha + raio > height || yBolinha - raio < 0) {
+	if (y + raio > height || y - raio < 0) {
 		velocidadeYBolinha *= -1;
 	}
 }
@@ -117,7 +119,8 @@ function verificaColisaoRaquete(x, y) {
 function movimentaRaqueteOponente() {
 	velocidadeYOponente =
 		yBolinha - yRaqueteOponente - raqueteComprimento / 2 - 30;
-	yRaqueteOponente += velocidadeYOponente;
+	yRaqueteOponente += velocidadeYOponente + chanceDeErrar;
+	calculaChanceDeErrar();
 }
 
 function incluiPlacar() {
@@ -142,5 +145,19 @@ function marcaPonto() {
 	if (xBolinha < 10) {
 		pontosDoOponente += 1;
 		ponto.play();
+	}
+}
+
+function calculaChanceDeErrar() {
+	if (pontosDoOponente >= meusPontos) {
+		chanceDeErrar += 1;
+		if (chanceDeErrar >= 39) {
+			chanceDeErrar = 40;
+		}
+	} else {
+		chanceDeErrar -= 1;
+		if (chanceDeErrar <= 35) {
+			chanceDeErrar = 35;
+		}
 	}
 }
