@@ -1,28 +1,37 @@
 //código do carro
 
-//carro 1
-let xCarro = 600;
-let yCarro = 40;
-let velocidadeCarro1 = 2;
-
-//carro 2
-let xCarro2 = 600;
-let yCarro2 = 96;
-let velocidadeCarro2 = 2.5;
-
-//carro 3
-let xCarro3 = 600;
-let yCarro3 = 150;
-let velocidadeCarro3 = 3.2;
+let xCarros = [600, 600, 600, 600, 600, 600];
+let yCarros = [40, 96, 150, 210, 270, 318];
+let velocidadeCarros = [2, 2.5, 3.2, 5, 3.3, 2.3];
+let comprimentoCarro = 50;
+let alturaCarro = 40;
 
 function mostraCarro() {
-	image(imagemCarro, xCarro, yCarro, 50, 40);
-	image(imagemCarro2, xCarro2, yCarro2, 50, 40);
-	image(imagemCarro3, xCarro3, yCarro3, 50, 40);
+	for (let i = 0; i < imagemCarros.length; i++) {
+		image(
+			imagemCarros[i],
+			xCarros[i],
+			yCarros[i],
+			comprimentoCarro,
+			alturaCarro
+		);
+	}
 }
 
 function movimentaCarro() {
-	xCarro -= velocidadeCarro1;
-	xCarro2 -= velocidadeCarro2;
-	xCarro3 -= velocidadeCarro3;
+	for (let i = 0; i < imagemCarros.length; i = i + 1) {
+		xCarros[i] -= velocidadeCarros[i];
+	}
+}
+
+function voltaPosicaoInicialDoCarro() {
+	for (let i = 0; i < imagemCarros.length; i = i + 1) {
+		if (passouTodaATela(xCarros[i])) {
+			xCarros[i] = 600;
+		}
+	}
+}
+
+function passouTodaATela(xCarro) {
+	return xCarro < -50;
 }
