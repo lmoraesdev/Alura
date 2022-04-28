@@ -1,15 +1,47 @@
-export class Conta{
-	constructor(saldoInicial, cliente, agencia){
+export class Conta {
+	constructor(saldoInicial, cliente, agencia) {
+		if (this.constructor == Conta) {
+			throw new Error("Você não pode instanciar Conta diretamente");
+		}
 		this._cliente = cliente;
 		this._agencia = agencia;
 		this._saldo = saldoInicial;
 	}
 
-	sacar(valor) {
-		if (this._saldo >= valor) {
-			this._saldo -= valor;
-			return valor;
+	get cliente() {
+		return this._cliente;
+	}
+
+	set cliente(value) {
+		this._cliente = value;
+	}
+
+	set cliente(novoValor) {
+		if (novoValor instanceof Cliente) {
+			this._cliente = novoValor;
 		}
+	}
+
+	get clinte() {
+		return this._cliente;
+	}
+
+	get saldo() {
+		return this._saldo;
+	}
+
+	sacar(valor) {
+		let taxa = 1;
+		return this._sacar(valor, taxa);
+	}
+
+	_sacar(valor, taxa) {
+		const valorSacado = valor * taxa;
+		if (this._saldo >= valorSacado) {
+			this._saldo -= valorSacado;
+			return valorSacado;
+		}
+		return 0;
 	}
 
 	depositar(valor) {
