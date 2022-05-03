@@ -1,4 +1,16 @@
 .banner__imagem {
-	height: calc(468px - 72px);
+	background: url("../../img/banner.jpg") no-repeat center / cover;
 	width: 100%;
+}
+
+@media screen and (min-width: 0) {
+	.banner__imagem {
+		height: calc(484px - 51px);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.banner__imagem {
+		height: calc(484px - 72px);
+	}
 }
