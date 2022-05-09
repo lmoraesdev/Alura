@@ -1,0 +1,13 @@
+.videoSobre {
+	background-color: #5e9edc;
+	padding: 25px 0;
+}
+
+.videoSobre .container {
+	color: #fff;
+}
+
+.videoSobre-sobre {
+	font-size: 1.3em;
+	line-height: 2;
+}

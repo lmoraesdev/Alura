@@ -1,0 +1,71 @@
+@media (min-width: 769px) {
+	.container {
+		width: 85%;
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799a6;
+	}
+
+	.cabecalhoPrincipal-nav-link:hover {
+		color: #fff;
+		background-color: #9799a6;
+	}
+
+	.cabecalhoPrincipal-titulo {
+		margin: 0;
+	}
+
+	.cabecalhoPrincipal-nav {
+		width: auto;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+	.rodapePrincipal-contatoForm {
+		margin-top: 0;
+		text-align: left;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n + 1) {
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	.conteudoPrincipal-cursos-link {
+		margin: 1.333%;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n + 1) {
+		margin-left: 1.333%;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(4n + 1) {
+		margin-left: 0;
+	}
+
+	.videoSobre-sobre {
+		margin-left: 1.5em;
+	}
+}

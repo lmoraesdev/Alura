@@ -1,0 +1,41 @@
+.conteudoPrincipal-cursos-link {
+	height: 100px;
+	background-color: #FFF;
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+}
+
+.conteudoPrincipal-cursos-link a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.conteudoPrincipal-cursos-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.conteudoPrincipal-cursos-link a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(even) a:before {
+	background: url(../../img/background1.svg) no-repeat;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(odd) a:before {
+	background: url(../../img/background2.svg) no-repeat;
+}
