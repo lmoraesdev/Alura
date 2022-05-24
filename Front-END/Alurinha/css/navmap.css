@@ -1,17 +1,29 @@
 .navmap-list-title {
 	font-weight: 700;
 	font-size: 1.3em;
-	margin: .9em 0;
-	padding-left: .3em;
-	padding-top: .2em;
-	padding-bottom: .2em;
+	margin: 0.9em 0;
+	padding-left: 0.3em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
 }
 
 .navmap-list-title + .rodapePrincipal-navMap-link {
 	margin-top: 0;
 }
 
-.navmap-list-title-bancoDeDados { color: #EC6E5A; border-left: 4px solid #EC6E5A; }
-.navmap-list-title-framework { color: #AD85BF; border-left: 4px solid #AD85BF; }
-.navmap-list-title-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
-.navmap-list-title-backend { color: #25D285; border-left: 4px solid #25D285; }
+.navmap-list-title-bancoDeDados {
+	color: #ec6e5a;
+	border-left: 4px solid #ec6e5a;
+}
+.navmap-list-title-framework {
+	color: #ad85bf;
+	border-left: 4px solid #ad85bf;
+}
+.navmap-list-title-frontend {
+	color: #5ec6f3;
+	border-left: 4px solid #5ec6f3;
+}
+.navmap-list-title-backend {
+	color: #25d285;
+	border-left: 4px solid #25d285;
+}
