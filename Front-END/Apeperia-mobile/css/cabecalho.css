@@ -1,0 +1,36 @@
+.cabecalho {
+	color: #fff;
+
+	width: 100%;
+
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+
+	border-bottom: 1px solid #103d4a;
+
+	position: absolute;
+}
+
+.cabecalho__logo {
+	margin-bottom: 1rem;
+}
+
+.cabecalho__navegacao {
+	text-align: center;
+}
+
+.cabecalho__link {
+	font-size: 1.1rem;
+
+	display: inline-block;
+
+	margin-right: 0.7rem;
+	margin-bottom: 1.25rem;
+	margin-left: 0.7rem;
+}
