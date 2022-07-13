@@ -12,4 +12,3 @@ export class Negociacao {
 		return data;
 	}
 }
-'1	'
